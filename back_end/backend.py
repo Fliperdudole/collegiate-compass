@@ -8,7 +8,7 @@ def search_school(api_key, school_name):
         'api_key': api_key,
         'school.name': school_name,
     }
-
+ 
     response = requests.get(f'{base_url}{endpoint}', params=params)
 
     if response.status_code == 200:
